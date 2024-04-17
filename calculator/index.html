@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <LINK REL="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <!-- <input type="text" placeholder="0" id="inputBox"> -->
+        <table>
+            <tr>
+                <td id="display"></td>
+            </tr>
+        </table>
+        <div>
+            <button class="operator" onclick="clearDisplay()">AC</button>
+            <button class="operator" onclick="clearDisplay()">DEL</button>
+            <button class="operator" onclick="numbers('%')">%</button>
+            <button class="operator" onclick="numbers('/')">/</button>
+        </div>
+        <div>
+            <button onclick="numbers('7')">7</button>
+            <button onclick="numbers('8')">8</button>
+            <button onclick="numbers('9')">9</button>
+            <button onclick="numbers('*')" class="operator">*</button>
+        </div>
+        <div>
+            <button onclick="numbers('4')">4</button>
+            <button onclick="numbers('5')">5</button>
+            <button onclick="numbers('6')">6</button>
+            <button onclick="numbers('-')" class="operator">-</button>
+        </div>
+        <div>
+            <button onclick="numbers('1')">1</button>
+            <button onclick="numbers('2')">2</button>
+            <button onclick="numbers('3')">3</button>
+            <button onclick="numbers('+')" class="operator">+</button>
+        </div>
+        <div>
+            <button onclick="numbers('00')">00</button>
+            <button onclick="numbers('0')">0</button>
+            <button onclick="numbers('.')">.</button>
+            <button class="equalBtn" onclick="sum()">=</button>
+        </div>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- https://jazim.netlify.app/ -->
